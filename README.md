@@ -10,6 +10,7 @@ A course-ready, full-stack DevOps project demonstrating secure user access, SQLi
 - A fixed, reviewed `sample-web` template. A build runs its actual Node.js build script; a deployment builds its Docker image and starts a loopback-only container. No user-supplied shell commands or repository URLs are accepted.
 - Periodic dashboard refresh, build output, status history, platform metrics, and account management.
 - Docker Compose, persistent database volume, health check, and GitHub Actions CI.
+- Optional idempotent initial administrator bootstrap from startup environment variables.
 
 ## Quick start (local development)
 
@@ -72,6 +73,7 @@ Tests use an in-memory SQLite database. They cover registration, login/logout, s
 - [API reference](docs/API.md)
 - [Testing guide](docs/TESTING.md)
 - [Deployment guide](docs/DEPLOYMENT.md)
+- [Render setup and initial administrator](docs/RENDER.md)
 
 ## Git workflow
 
