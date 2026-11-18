@@ -1,0 +1,20 @@
+{
+  "name": "automated-application-build-deployment-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A full-stack DevOps course project for building, testing, and deploying applications.",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "build": "npm run build --workspace frontend",
+    "lint": "npm run lint --workspace backend && npm run lint --workspace frontend",
+    "test": "npm test --workspace backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "rollup": "npm:@rollup/wasm-node@^4.68.5"
+  }
+}
